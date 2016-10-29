@@ -1,0 +1,19 @@
+
+Purpose:	This is a free time experiment program written in C# implementing a google chrome driver and selenium automation.
+The first purpose of this program is to attempt to find a pattern in the Forex Market using a bot to record trends of a
+minute-by-minute graph of each of the availabe forexs on MarketsWorld.com. The patterns attempted to be discovered are based 
+on the slope, avg, max, min, and standard deviation of the last 5, 30, and 120 minutes of the forex market.
+	The second purpose of the program is to make a maximum profit using the previous patterns, if they are found. The program
+records the graph for 2 hours before going into bot mode in which it utilized the patterns by looking at the graphs of each forex 
+and predicting which Forex has the most likely chance of being predicted correctly. The program then bets on this forex in the 
+predicted direction. The minimum and maximum bets on this website are 1$ and 1000$ respectively and the payout is 1.7x investment.
+The program uses a 2.5x algorithm in which the first bet made is 1$. If this trade is incorrect, the next bet is 2.5x the previous.
+Once a trade is successful, the bet amount goes back to 1$. This gives roughly 9 consecutive wrong trades before busting, or losing the 
+ability to 2.5x the previous bet. With a pattern that finds just a 60% accuracy trend, the chances of busting are 2.5% over 100 trades.
+As the program keeps running, the patterns continue to be recorded so the predictions should increase in accuracy. 
+
+Results:	The results of the attemmpt to find a pattern in the Forex Market were conclusive. The program found that, after a large
+enough sample size, the elements used in the algorithm had 0% influence on the next minutes results. Every state was eventually reduced
+down to a 50/50 chance that the forex would go up or down. That being said, the chances of busting were increased to 19% per 100 trades.
+After 500 trades, the program should hypothetically bust... which it did afer 700 trades. The money made after 700 trades was barely over
+520$ and the money lost when busting was about 1700.
